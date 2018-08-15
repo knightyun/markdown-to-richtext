@@ -1,0 +1,30 @@
+{
+    "name": "markdown-to-richtext",
+    "version": "1.0.0",
+    "description": "Online tool for converting markdown to rich text format.",
+    "main": "",
+    "private": true,
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/knightyun/markdown-to-richtext.git"
+    },
+    "keywords": [],
+    "author": "knightyun",
+    "license": "MIT",
+    "dependencies": {},
+    "devDependencies": {
+        "clean-webpack-plugin": "^0.1.19",
+        "copy-webpack-plugin": "^4.5.2",
+        "css-loader": "^1.0.0",
+        "file-loader": "^1.1.11",
+        "jsx-loader": "^0.13.2",
+        "less": "^3.8.1",
+        "less-loader": "^4.1.0",
+        "style-loader": "^0.22.1",
+        "url-loader": "^1.0.1",
+        "webpack": "^4.16.5"
+    }
+}

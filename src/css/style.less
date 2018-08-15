@@ -1,0 +1,242 @@
+::selection {
+  background: #fde6ba;
+  color: #000;
+}
+
+button, textarea, select {
+  outline: none;
+}
+
+body,
+html {
+  overflow: hidden;
+}
+
+body {
+  // background: #FFF;
+  // font-family: 'Menlo','Monaco','Source Code Pro','Consolas','Inconsolata','Ubuntu Mono','DejaVu Sans Mono','Courier New','Droid Sans Mono','Hiragino Sans GB','微软雅黑',monospace !important;
+  font-size: 15px !important;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Menlo','Monaco','Source Code Pro','Consolas','Inconsolata','Ubuntu Mono','DejaVu Sans Mono','Courier New','Droid Sans Mono','Hiragino Sans GB','微软雅黑',monospace !important;
+}
+h1 {
+  font-size: 26px;
+}
+h2 {
+  font-size: 22px;
+}
+h3 {
+  font-size: 18px;
+}
+h4 {
+  font-size: 14px;
+}
+a {
+  font-size: 15px !important;
+  word-break: break-all !important;
+}
+ul, ol {
+  padding-left: 32px !important;
+  list-style-type: square !important;
+  li span {
+    font-size: 14px !important;
+    color: #4a4a4a;
+  }
+}
+ol {
+  list-style-type: decimal !important;
+}
+//========= Top Bar ============
+.topheader {
+  overflow: hidden;
+  -webkit-user-select: none;
+  height: 68px;
+  padding: 0 20px;
+  position: relative;
+  background: #3af;
+  background: -moz-linear-gradient(-60deg,#3aa17e 0,#00537e 100%);
+  background: -webkit-gradient(linear,left,right,color-sleft(0%,#3aa17e),color-sleft(100%,#00537e));
+  background: -webkit-linear-gradient(-60deg,#3aa17e 0,#00537e 100%);
+  background: -o-linear-gradient(-60deg,#3aa17e 0,#00537e 100%);
+  background: -ms-linear-gradient(-60deg,#3aa17e 0,#00537e 100%);
+  background: linear-gradient(-60deg,#3aa17e 0,#00537e 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr= '#3aa17e', endColorstr='#00537e', GradientType=1);
+}
+
+.topheader h1 {
+  font-size: 30px;
+  line-height: 64px;
+  color: #FFF;
+  font-family: fantasy,cursive,consolas;
+  text-shadow: 1px 1px 1px #000, 1px 1px 3px #CCC;
+  display: inline-block;
+}
+
+.topheader span {
+  font-size: 13px;
+  display: inline-block;
+  margin-left: 0;
+  color: #E4E4E4;
+  position: relative;
+  top: 10px;
+}
+
+.topheader span a {
+  color: #E4E4E4;
+}
+
+.topheader p {
+  color: #0ac;
+  font-size: 20px;
+  margin-top: -30px;
+}
+
+.topheader a:hover {
+  color: #e58c7c;
+}
+
+.topheader ul {
+  position: absolute;
+  right: 20px;
+  top: 0;
+  list-style-type: none !important;
+  height: 64px;
+  line-height: 64px;
+}
+
+.topheader ul li {
+  float: left;
+  margin-left: 20px;
+  font-family: consolas;
+}
+
+.topheader ul li a {
+  color: #555;
+  display: inline-block;
+  height: 100%;
+  line-height: 64px;
+}
+
+.topheader ul li a {
+  color: #555;
+}
+
+.topheader ul li a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.topheader ul li .icon {
+  margin-right: 4px;
+  vertical-align: middle;
+  transition: none;
+}
+// ======== Input =======
+textarea {
+  width: 100%;
+  margin: 0;
+  padding: 1em;
+  overflow: auto;
+  border: none;
+  background-color: #fff;
+  font-family: courier, monospace;
+  font-size: inherit;
+  color: inherit;
+  outline: none;
+  background: #333;
+  color: #fff;
+  position: absolute;
+  top: 64px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  resize: none;
+  z-index: 2;
+  font-size: 15px;
+}
+// ======== Output =======
+#output {
+  position: absolute;
+  top: 64px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  resize: none;
+  z-index: 1;
+  background: #EEE;
+  overflow: hidden;
+  .wrapper {
+    overflow-y: auto;
+    height: 100%;
+    margin: 20px auto;
+    background: #FFF;
+    padding: 1rem;
+    width: 800px;
+    padding-bottom: 100px;
+    max-width: 100%;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+// ======== Plugins =======
+.github-star {
+  position: relative;
+  top: 5px;
+}
+
+.btn {
+  border: none;
+  color: white;
+  padding: 5px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  box-shadow: 1px 1px 3px #666;
+}
+
+.convert-button,
+.copy-button {
+  position: absolute;
+  right: 110px;
+  z-index: 3;
+  top: 80px;
+  border-radius: 3px;
+  background-color: #3a6586;
+}
+
+.convert-button {
+  right: 15px;
+  background-color: #e3e4bd;
+  color: #555;
+}
+
+.themes-config {
+  margin: 0 auto;
+  width: 800px;
+  max-width: 100%;
+  padding-top: 20px;
+  padding-left: 8px;
+  .theme-wrapper {
+    margin-top: 8px;
+    display: inline-block;
+    margin-right: 20px;
+    select {
+      background: #FFF;
+    }
+  }
+}
+
+@media screen and (max-width:641px) {
+  .topheader ul {
+    display: none;
+  }
+  .btn {
+    padding: 2px 15px;
+    font-size: 14px;
+  }
+  .copy-button {
+    right: 80px;
+  }
+}
