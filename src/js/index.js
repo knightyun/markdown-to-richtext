@@ -9,6 +9,7 @@ var PageTheme = require("./theme/page-theme");
 require("./showdown-plugins/showdown-prettify-for-wechat.js");
 require("./showdown-plugins/showdown-github-task-list.js");
 require("./showdown-plugins/showdown-footnote.js");
+// require("./clipboard.min.js");
 // require("./google-code-prettify/run_prettify.js");
 
 
@@ -24,7 +25,7 @@ $.each(kv, function(index, item) {
 
 // 方便跨域加载资源
 if (/\.barretlee\.com$/.test(location.hostname)) {
-    // document.domain = 'barretlee.com';
+    document.domain = 'barretlee.com';
 }
 
 
@@ -47,7 +48,6 @@ var OnlineMarkdown = {
         });
     },
     start: function() {
-        $('#input').val();
         this.bindEvt();
         this.updateOutput();
         new CodeTheme();
