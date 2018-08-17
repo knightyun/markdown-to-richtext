@@ -5,7 +5,7 @@ var themes = [
     'narrow-screen', // '字号偏大-间距偏大-窄屏模式',
     'wide-screen' // '字号偏大-间距偏大-宽屏模式'
 ];
-var currentTheme = 'wide-screen'; //'字号偏大-间距偏大-宽屏模式';
+var currentTheme = 'suitable-screen'; //'字号偏大-间距偏大-宽屏模式';
 
 let PageTheme = function() {
     this.init();
