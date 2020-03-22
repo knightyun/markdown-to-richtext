@@ -11,7 +11,6 @@ require("./showdown-plugins/showdown-github-task-list.js");
 require("./showdown-plugins/showdown-footnote.js");
 require("./google-code-prettify/run_prettify.js");
 
-
 var kv = location.href.split('?')[1];
 kv = kv && kv.split('&') || [];
 var params = {};
@@ -21,12 +20,6 @@ $.each(kv, function(index, item) {
         params[m[0]] = m[1];
     }
 });
-
-// 方便跨域加载资源
-// if (/\.barretlee\.com$/.test(location.hostname)) {
-//     document.domain = 'barretlee.com';
-// }
-
 
 var converter = new showdown.Converter({
     extensions: ['prettify', 'tasklist', 'footnote'],

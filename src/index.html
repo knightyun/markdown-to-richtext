@@ -10,58 +10,23 @@
     <script src="./js/index.js"></script>
     <link rel="stylesheet" href="./themes/github-v2.css" id="codeThemeId" />
     <link rel="stylesheet" id="pageThemeId" />
-    <style type="text/css">
-        html,
-        body {
-            height: 100%;
-        }
-        
-        .topheader {
-            width: 100%;
-            float: left;
-            height: 100px;
-        }
-        
-        #input {
-            width: 50%;
-            height: 100%;
-            position: absolute;
-            top: 100px;
-            left: 0px;
-        }
-        
-        #output {
-            width: 50%;
-            position: absolute;
-            top: 100px;
-            left: 50%;
-        }
-        
-        .convert-button,
-        .copy-button {
-            position: inherit;
-        }
-    </style>
 </head>
 
 <body>
-
     <div class="topheader">
         <a href="https://knightyun.github.io">
             <h1>Markdown转富文本工具</h1>
             <p>Markdown to rich text tool</p>
         </a>
-
         <ul>
             <li>
-                <iframe allowtransparency="true" frameborder="0" scrolling="0" width="90px" height="20px" class="github-watch" src="http://ghbtns.com/github-btn.html?user=knightyun&amp;repo=markdown-to-richtext&amp;type=watch&amp;count=true&amp;size=middle"></iframe>
+                <iframe allowtransparency="true" frameborder="0" scrolling="0" width="90px" height="20px" class="github-watch"
+                src="http://ghbtns.com/github-btn.html?user=knightyun&amp;repo=markdown-to-richtext&amp;type=watch&amp;count=true&amp;size=middle"></iframe>
             </li>
         </ul>
     </div>
-
     <!--编辑-->
     <textarea id="input" spellcheck="false"></textarea>
-
     <!--预览-->
     <div id="output" class="themes-config">
         <div class="theme-wrapper">
@@ -73,27 +38,6 @@
         </div>
         <div class="wrapper" id="outputCtt"></div>
     </div>
-
-    <!-- <script>
-        var _hmt = _hmt || [];
-        (function() {
-            var hm = document.createElement("script");
-            hm.src = "//hm.baidu.com/hm.js?3e1cdb5d0a9e409358566f06f89e048d";
-            var s = document.getElementsByTagName("script")[0];
-            s.parentNode.insertBefore(hm, s);
-        })();
-    </script> -->
-
-    <!-- <script>
-        (function() {
-            var bp = document.createElement('script');
-            bp.src = '//push.zhanzhang.baidu.com/push.js';
-            var s = document.getElementsByTagName("script")[0];
-            s.parentNode.insertBefore(bp, s);
-        })();
-    </script> -->
-
-    <!-- <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script> -->
 </body>
 
 </html>
