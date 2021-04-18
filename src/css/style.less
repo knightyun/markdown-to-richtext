@@ -48,9 +48,11 @@ ul, ol {
 ol {
   list-style-type: decimal !important;
 }
+
 //========= Top Bar ============
 .topheader {
   overflow: hidden;
+  user-select: none;
   -webkit-user-select: none;
   height: 68px;
   padding: 0 20px;
@@ -63,76 +65,68 @@ ol {
   background: -ms-linear-gradient(-60deg,#3aa17e 0,#00537e 100%);
   background: linear-gradient(-60deg,#3aa17e 0,#00537e 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr= '#3aa17e', endColorstr='#00537e', GradientType=1);
+  h1 {
+    font-size: 30px;
+    line-height: 64px;
+    color: #FFF;
+    font-family: fantasy,cursive,consolas;
+    text-shadow: 1px 1px 1px #000, 1px 1px 3px #CCC;
+    display: inline-block;
+  }
+
+  p {
+    color: #0ac;
+    font-size: 20px;
+    margin-top: -30px;
+  }
+
+  span {
+    font-size: 13px;
+    display: inline-block;
+    margin-left: 0;
+    color: #E4E4E4;
+    position: relative;
+    top: 10px;
+    a {
+      color: #E4E4E4;
+    }
+  }
+
+  a:hover {
+    color: #e58c7c;
+  }
+
+  ul {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    list-style-type: none !important;
+    height: 64px;
+    line-height: 64px;
+    li {
+      float: left;
+      margin-left: 20px;
+      font-family: consolas;
+      a {
+        color: #555;
+        display: inline-block;
+        height: 100%;
+        line-height: 64px;
+        color: #555;
+      }
+      a:hover {
+        color: #000;
+        text-decoration: underline;
+      }
+      .icon {
+        margin-right: 4px;
+        vertical-align: middle;
+        transition: none;
+      }
+    }
+  }
 }
 
-.topheader h1 {
-  font-size: 30px;
-  line-height: 64px;
-  color: #FFF;
-  font-family: fantasy,cursive,consolas;
-  text-shadow: 1px 1px 1px #000, 1px 1px 3px #CCC;
-  display: inline-block;
-}
-
-.topheader span {
-  font-size: 13px;
-  display: inline-block;
-  margin-left: 0;
-  color: #E4E4E4;
-  position: relative;
-  top: 10px;
-}
-
-.topheader span a {
-  color: #E4E4E4;
-}
-
-.topheader p {
-  color: #0ac;
-  font-size: 20px;
-  margin-top: -30px;
-}
-
-.topheader a:hover {
-  color: #e58c7c;
-}
-
-.topheader ul {
-  position: absolute;
-  right: 20px;
-  top: 0;
-  list-style-type: none !important;
-  height: 64px;
-  line-height: 64px;
-}
-
-.topheader ul li {
-  float: left;
-  margin-left: 20px;
-  font-family: consolas;
-}
-
-.topheader ul li a {
-  color: #555;
-  display: inline-block;
-  height: 100%;
-  line-height: 64px;
-}
-
-.topheader ul li a {
-  color: #555;
-}
-
-.topheader ul li a:hover {
-  color: #000;
-  text-decoration: underline;
-}
-
-.topheader ul li .icon {
-  margin-right: 4px;
-  vertical-align: middle;
-  transition: none;
-}
 // ======== Input =======
 textarea {
   width: 100%;
@@ -156,6 +150,7 @@ textarea {
   z-index: 2;
   font-size: 15px;
 }
+
 // ======== Output =======
 #output {
   position: absolute;
@@ -178,7 +173,28 @@ textarea {
     max-width: 100%;
     -webkit-overflow-scrolling: touch;
   }
+  strong {
+    color: #3e3e3e;
+  }
+  pre.linenums {
+    border-radius: .5em;
+  }
+  ol.linenums li {
+    padding-left: 0;
+    list-style-type: none;
+    span {
+      white-space: pre;
+    }
+    code {
+      white-space: inherit;
+    }
+  }
+  code.prettyprint.code-in-text span {
+    font-weight: 500;
+    color: #ff3502;
+  }
 }
+
 // ======== Plugins =======
 .github-star {
   position: relative;
